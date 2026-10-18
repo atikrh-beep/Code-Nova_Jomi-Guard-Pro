@@ -1,170 +1,262 @@
-Jomi Guard Pro
+🛡️ Jomi Guard Pro
 
-AI-Powered Land-Record Screening and Report Integrity Verification System
+AI-Powered Land-Record Screening & Report Integrity Verification
 
-Hackathon Theme: Digital Land Records, Verification & Digitization
-Domain: Government Technology
-Presented by: Atikur Rahman and Mir Abrar Rahman
-Department: Computer Science and Engineering
-University: Daffodil International University
+<p align="center">
+  A Government Technology prototype for structured land-record review, discrepancy screening, and report integrity verification.
+</p><p align="center">
+  <img src="https://img.shields.io/badge/Domain-GovTech-176B55?style=for-the-badge" alt="GovTech" />
+  <img src="https://img.shields.io/badge/Project-Hackathon%20Prototype-2563EB?style=for-the-badge" alt="Hackathon Prototype" />
+  <img src="https://img.shields.io/badge/UI-React%20%2B%20TypeScript-3178C6?style=for-the-badge" alt="React and TypeScript" />
+  <img src="https://img.shields.io/badge/Status-Educational%20Prototype-CA8A04?style=for-the-badge" alt="Educational Prototype" />
+</p><p align="center">
+  <a href="https://github.com/atikrh-beep/Code-Nova_Jomi-Guard-Pro">Repository</a> •
+  <a href="https://dlrs.gov.bd/">DLRS</a> •
+  <a href="https://www.land.gov.bd/">Bangladesh Land Portal</a>
+</p>---
+
+📌 Project Overview
+
+Jomi Guard Pro is a Government Technology (GovTech) prototype designed to support the preliminary screening and review of land-related records.
+
+The platform aims to organize land cases, structure document-review workflows, highlight potential discrepancies where implemented, and support report integrity checks using trusted reference information.
+
+By bringing relevant information and review findings into a structured interface, Jomi Guard Pro explores how digital tools can make land-record review more organized, transparent, and understandable.
+
+«Our mission: Make preliminary land-record screening more structured, traceable, and accessible while keeping verification and legal decisions under appropriate human authority.»
+
+🎯 Project Information
+
+Item| Details
+Project| Jomi Guard Pro
+Hackathon Theme| Digital Land Records, Verification & Digitization
+Domain| Government Technology
+Presented by| Atikur Rahman & [Second Presenter’s Name]
+Department| Computer Science and Engineering
+University| Daffodil International University
+Project Type| Educational hackathon prototype
+
+✨ Core Features
+
+The following describes the intended capabilities of the platform. Availability depends on what is implemented and operational in the current version.
+
+🗂️ Land-Case Management
+
+Organize land-related cases and their associated information in a structured workflow.
+
+📄 Document Review
+
+Support preliminary review of land-record information and associated case materials.
+
+🔎 Discrepancy Reporting
+
+Present potential inconsistencies for further examination where discrepancy-detection functionality is implemented.
+
+🧾 Evidence & Findings
+
+Structure review notes, observations, and supporting information to make findings easier to understand.
+
+📊 Report Management
+
+Organize and present case-review results in a consistent format.
+
+🕘 Activity Tracking
+
+Maintain a history of case-related actions where audit or activity logging is supported.
+
+🔐 Report Integrity Verification
+
+Compare a report's cryptographic hash against a trusted, previously recorded hash where this functionality is implemented.
+
+🤖 AI-Assisted Processing
+
+Support document analysis or explanations when the relevant AI integration is configured and operational.
 
 ---
 
-About the Project
+🖥️ Technology Stack
 
-Jomi Guard Pro is a government-technology prototype designed to support the preliminary screening and review of land-related records. It provides a structured approach to case management, document review, discrepancy reporting, and report integrity checking.
-
-The goal is to make land-record review more organized, transparent, and easier to understand while supporting responsible digital workflows.
-
-Jomi Guard Pro is a prototype and does not replace official land records, legal advice, or decisions made by authorized government authorities.
-
-Key Features
-
-- Land-Case Management: Organize land-related cases and their associated information.
-- Document Review: Support the preliminary review of land-record information.
-- Discrepancy Reporting: Present potential inconsistencies for further examination where implemented.
-- Evidence and Findings: Organize review notes and supporting information.
-- Report Management: Structure and present case-review results.
-- Activity Tracking: Maintain a history of actions where supported by the implementation.
-- Report Integrity Checking: Compare report files against trusted integrity records where implemented.
-- AI-Assisted Processing: Support document analysis or explanations when the relevant AI functionality is configured and operational.
-
-Feature availability depends on the current implementation and configuration.
-
-Technology Stack
-
-The repository's package manifest includes the following technologies:
+The repository's package manifest identifies the following technologies. Some listed tools may be optional or used only in specific parts of the application.
 
 Technology| Purpose
-React| User interface
-TypeScript| Application development
+React| Component-based user interface
+TypeScript| Typed application development
 Vite| Development server and build tooling
-Tailwind CSS| Styling
-Lucide React| Icons
+Tailwind CSS| Utility-first styling
+Lucide React| Interface icons
 Motion| Interface animations
 Node.js| JavaScript runtime
-Express| Web server framework, where used
-Google Gen AI SDK| Gemini API client, where integrated
+Express| Server framework, where used
+Google Gen AI SDK| Gemini API integration, where configured
+dotenv| Environment-variable management, where used
 
-Open-Source Tools and Credits
+🏗️ Application Workflow
 
-We acknowledge the maintainers and contributors of the open-source projects used in this application.
+The intended review workflow can be represented as:
 
-- React: https://github.com/facebook/react
-- TypeScript: https://github.com/microsoft/TypeScript
-- Vite: https://github.com/vitejs/vite
-- Tailwind CSS: https://github.com/tailwindlabs/tailwindcss
-- Lucide: https://github.com/lucide-icons/lucide
-- Motion: https://github.com/motiondivision/motion
-- Express: https://github.com/expressjs/express
-- dotenv: https://github.com/motdotla/dotenv
-- Google Gen AI SDK: https://github.com/googleapis/js-genai
+Case Registration → Document Review → Discrepancy Screening → Findings & Evidence → Report Generation → Integrity Check
 
-These projects are maintained by their respective authors and communities. Their names and trademarks belong to their respective owners. Refer to each project's license and the installed package versions for applicable license terms.
+Each stage depends on the functionality available in the running application. This workflow is a conceptual overview, not a claim that every stage is fully automated.
 
-AI-assisted development: Google AI Studio and ChatGPT were used to assist with development-related tasks and documentation. Other tools should be credited if they were used by the team.
+🚀 Getting Started
 
-Public Data and Reference Sources
-
-The following public Bangladesh government websites provide reference information about land records and services:
-
-1. Department of Land Records and Surveys (DLRS):
-   https://dlrs.gov.bd/
-
-2. Online Land Record and Survey Management — Khatian Search:
-   https://settlement.gov.bd/Khatian/
-
-3. Bangladesh Land Information Portal:
-   https://www.land.gov.bd/
-
-These links are listed as public reference sources. Their inclusion does not mean that data was downloaded from these websites or that the application is connected to government databases.
-
-Demonstration Data
-
-Sample identifiers, including "RS-DEMO-101", "CS-DEMO-075", and plot number "8-9-2", are illustrative demonstration values. They should not be interpreted as real or officially verified land records.
-
-Any future use of actual records must comply with applicable access conditions, privacy requirements, and authorization rules.
-
-How to Run Locally
+Follow these steps to run the project locally.
 
 Prerequisites
 
-- Node.js 20.19.0 or newer
+- "Node.js" (https://nodejs.org/) — version 20.19.0 or newer
 - npm
-- Git
+- "Git" (https://git-scm.com/)
 
-Step 1: Clone the repository
+1. Clone the repository
 
 git clone https://github.com/atikrh-beep/Code-Nova_Jomi-Guard-Pro.git
 
-Step 2: Enter the project directory
+2. Open the project directory
 
 cd Code-Nova_Jomi-Guard-Pro
 
-Step 3: Install dependencies
+3. Install dependencies
 
 npm install
 
-Step 4: Configure environment variables
+4. Configure environment variables
 
-Review the ".env.example" file. If an AI feature requires a Gemini API key, configure it securely through the appropriate environment or hosting settings.
+Review the project's ".env.example" file, if available.
 
-Never publish API keys, passwords, or private credentials in a public repository.
+If an AI feature requires a Gemini API key, configure it through the appropriate environment or hosting settings. Follow the application's actual configuration requirements.
 
-Step 5: Start the development server
+Security: Never commit API keys, passwords, or other private credentials to a public repository. Client-side environment variables must not be treated as secret.
+
+5. Start the development server
 
 npm run dev
 
-Open the local URL printed in the terminal. The project's development script uses port "3000" by default.
+Open the local address printed in your terminal.
 
-Step 6: Build for production
+The development server is configured to use port "3000" by default, subject to the current project configuration.
+
+6. Build for production
 
 npm run build
 
-To preview the production build locally:
+7. Preview the production build
 
 npm run preview
 
-The production build is generated in the "dist/" directory.
+Vite normally generates the production build in the "dist/" directory.
 
-Report Integrity and Responsible Screening
+«Troubleshooting: If a command fails, check "package.json" for the available scripts, verify your Node.js version, and review any missing environment variables.»
 
-Cryptographic hashes can help determine whether a report file matches a previously recorded file hash. A matching hash supports a conclusion that the file contents match that stored integrity reference.
+🌐 Public Data & Reference Sources
 
-However, a hash match alone does not establish:
+The following public Bangladesh government websites provide reference information about land records and services.
 
-- Legal validity of a document
-- Accuracy of the information contained in it
-- Identity or authority of the issuer
-- Legal ownership of land
+Source| Relevance| Link
+Department of Land Records and Surveys (DLRS)| Land-record and survey-related information| "dlrs.gov.bd" (https://dlrs.gov.bd/)
+Online Land Record and Survey Management — Khatian Search| Public khatian search interface| "settlement.gov.bd/Khatian" (https://settlement.gov.bd/Khatian/)
+Bangladesh Land Information Portal| Government land-service information| "land.gov.bd" (https://www.land.gov.bd/)
 
-Potential discrepancies and AI-generated findings require human review and comparison with appropriate source records.
+Data transparency: These are reference sources only. Their inclusion does not mean that Jomi Guard Pro downloads data from these websites, accesses government databases, or has an official government integration.
 
-Security and Privacy
+🧪 Demonstration Data
 
-- Do not expose API keys or credentials.
-- Use only documents that you are authorized to access.
-- Avoid collecting or publishing unnecessary personal information.
-- Protect sensitive records with appropriate access controls.
-- Review AI-generated findings before relying on them.
-- Obtain authorization before connecting to official government systems.
+Sample identifiers used in demonstrations include:
 
-Future Improvements
+- "RS-DEMO-101"
+- "CS-DEMO-075"
+- Plot number: "8-9-2"
 
-- Authorized integration with official digital land-record services
-- Improved document extraction and discrepancy highlighting
-- Stronger report-integrity records and digital signatures
-- More comprehensive audit trails
-- Notifications and workflow analytics
-- Bangla and English language support
-- Accessibility, security, and usability testing
+These are illustrative demonstration values and must not be interpreted as real, authentic, or officially verified land records.
 
-These are potential improvements and should not be interpreted as features already completed.
+Any future use of real records must follow applicable access conditions, privacy requirements, and authorization rules.
 
-Repository
+🔐 Understanding Report Integrity
 
-GitHub: https://github.com/atikrh-beep/Code-Nova_Jomi-Guard-Pro
+A cryptographic hash, such as SHA-256, can be used to compare a report file against a previously recorded integrity reference.
 
-Disclaimer
+If the calculated hash matches a trusted reference, it provides evidence that the file contents match the contents represented by that reference.
 
-Jomi Guard Pro is an educational hackathon prototype. It is not an official government service and does not independently establish land ownership, legal status, or document validity. All findings should be reviewed against appropriate records by authorized people.
+However, a matching hash does not independently prove:
+
+- Legal validity or authenticity of the document.
+- Accuracy of the information it contains.
+- Identity or authority of the document's issuer.
+- Legal ownership of a property.
+- Authenticity of the original reference hash.
+
+The reliability of an integrity check depends on how the reference hash was created, protected, and verified.
+
+Potential discrepancies and AI-generated findings must be reviewed by qualified people against appropriate source records.
+
+🛡️ Security, Privacy & Responsible Use
+
+Jomi Guard Pro is designed as an educational prototype. Responsible development and future deployment should prioritize:
+
+- Credential protection: Keep API keys and secrets out of public repositories.
+- Data minimization: Avoid collecting unnecessary personal or property information.
+- Access control: Protect sensitive documents with appropriate authentication and authorization.
+- Human oversight: Review AI-generated findings before relying on them.
+- Authorized access: Obtain permission before accessing or integrating official systems.
+- Transparent reporting: Clearly distinguish observed data, potential discrepancies, and unverified findings.
+- Auditability: Protect activity records against unauthorized modification where audit logging is implemented.
+
+🧰 Open-Source Tools & Credits
+
+We acknowledge the maintainers and contributors of the open-source projects used in this application.
+
+Project| Repository
+React| "facebook/react" (https://github.com/facebook/react)
+TypeScript| "microsoft/TypeScript" (https://github.com/microsoft/TypeScript)
+Vite| "vitejs/vite" (https://github.com/vitejs/vite)
+Tailwind CSS| "tailwindlabs/tailwindcss" (https://github.com/tailwindlabs/tailwindcss)
+Lucide| "lucide-icons/lucide" (https://github.com/lucide-icons/lucide)
+Motion| "motiondivision/motion" (https://github.com/motiondivision/motion)
+Express| "expressjs/express" (https://github.com/expressjs/express)
+dotenv| "motdotla/dotenv" (https://github.com/motdotla/dotenv)
+Google Gen AI SDK| "googleapis/js-genai" (https://github.com/googleapis/js-genai)
+
+The applicable licenses depend on the packages and versions actually used. Consult the corresponding license files and package metadata.
+
+AI-Assisted Development
+
+Development-related tasks and documentation were assisted by:
+
+- "Google AI Studio" (https://aistudio.google.com/)
+- "ChatGPT" (https://chatgpt.com/)
+
+Additional AI tools should be credited if used by the team.
+
+🔭 Future Roadmap
+
+Potential improvements include:
+
+- Authorized integration with official digital land-record services.
+- Better document extraction and visual discrepancy highlighting.
+- Stronger integrity-reference storage and digital signatures.
+- More comprehensive, tamper-resistant audit trails.
+- Workflow notifications and analytics.
+- Bangla and English language support.
+- Improved accessibility, security, and usability testing.
+
+These items are proposed improvements, not claims of existing functionality.
+
+⚖️ Disclaimer
+
+Jomi Guard Pro is an educational hackathon prototype. It is not an official Bangladesh government service and does not independently establish land ownership, legal status, document authenticity, or legal validity.
+
+All findings are preliminary and should be reviewed against appropriate records by authorized people. The application must not be used as a substitute for official verification, professional legal advice, or decisions by authorized government authorities.
+
+📂 Repository
+
+GitHub: "atikrh-beep/Code-Nova_Jomi-Guard-Pro" (https://github.com/atikrh-beep/Code-Nova_Jomi-Guard-Pro)
+
+---
+
+<p align="center">
+  Built for the <strong>Digital Land Records, Verification & Digitization</strong> hackathon theme.
+  <br />
+  <strong>Jomi Guard Pro</strong> — Exploring more structured and transparent land-record review.
+  <br /><br />
+  <sub>Md.Atikur Rahman · Computer Science and Engineering · Daffodil International University</sub>
+</p>
