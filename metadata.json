@@ -1,0 +1,6 @@
+{
+  "name": "Jomi Guard Pro",
+  "description": "Government technology platform for land-record screening, discrepancy detection, evidence management, audit reporting, and public report-integrity verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
