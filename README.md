@@ -1,41 +1,89 @@
-🛡️ Jomi Guard Pro
+Jomi Guard Pro
 
-AI-Powered Land Record Screening and Report Integrity Verification System
+AI-Powered Land-Record Screening and Report Integrity Verification System
 
-AI Hackathon Project
-Team Members: Atikur Rahman and [Second Presenter’s Name]
+Hackathon Theme: Digital Land Records, Verification & Digitization
+Domain: Government Technology
+Presented by: Atikur Rahman and Mir Abrar Rahman
 Department: Computer Science and Engineering
 University: Daffodil International University
 
+---
+
 About the Project
 
-Jomi Guard Pro is a government-technology prototype designed to support structured land-record screening, case management, review workflows, and report integrity checking.
+Jomi Guard Pro is a government-technology prototype designed to support the preliminary screening and review of land-related records. It provides a structured approach to case management, document review, discrepancy reporting, and report integrity checking.
 
-Land administration involves reviewing documents, comparing land identifiers, recording findings, and maintaining a traceable workflow. Jomi Guard Pro explores how digital tools and AI-assisted document processing can help make these activities more organized and efficient.
+The goal is to make land-record review more organized, transparent, and easier to understand while supporting responsible digital workflows.
 
-Our vision: Help government officers review land-related cases more systematically while supporting accountability, transparency, and responsible decision-making.
+Jomi Guard Pro is a prototype and does not replace official land records, legal advice, or decisions made by authorized government authorities.
 
 Key Features
 
-- Case Intake: Collect structured land-case information.
-- Review Workspace: Organize cases and review progress.
-- Findings and Evidence: Record observations and supporting information.
-- Report Management: Organize reports within the application workflow.
-- Audit Trail: Provide activity history where implemented.
-- Role-Based Access: Support access according to assigned roles.
-- Public Report Integrity Checking: Check report contents against a trusted integrity record where implemented.
-- AI-Assisted Processing: Support document analysis and explanations where the relevant AI functionality is configured.
+- Land-Case Management: Organize land-related cases and their associated information.
+- Document Review: Support the preliminary review of land-record information.
+- Discrepancy Reporting: Present potential inconsistencies for further examination where implemented.
+- Evidence and Findings: Organize review notes and supporting information.
+- Report Management: Structure and present case-review results.
+- Activity Tracking: Maintain a history of actions where supported by the implementation.
+- Report Integrity Checking: Compare report files against trusted integrity records where implemented.
+- AI-Assisted Processing: Support document analysis or explanations when the relevant AI functionality is configured and operational.
 
-Feature availability depends on the current implementation.
+Feature availability depends on the current implementation and configuration.
 
 Technology Stack
 
-- React 19 — User interface
-- TypeScript — Application development
-- Vite — Development server and build tooling
-- CSS and Tailwind CSS — Styling
-- Google GenAI SDK — AI integration dependency
-- Node.js and npm — Development environment and package management
+The repository's package manifest includes the following technologies:
+
+Technology| Purpose
+React| User interface
+TypeScript| Application development
+Vite| Development server and build tooling
+Tailwind CSS| Styling
+Lucide React| Icons
+Motion| Interface animations
+Node.js| JavaScript runtime
+Express| Web server framework, where used
+Google Gen AI SDK| Gemini API client, where integrated
+
+Open-Source Tools and Credits
+
+We acknowledge the maintainers and contributors of the open-source projects used in this application.
+
+- React: https://github.com/facebook/react
+- TypeScript: https://github.com/microsoft/TypeScript
+- Vite: https://github.com/vitejs/vite
+- Tailwind CSS: https://github.com/tailwindlabs/tailwindcss
+- Lucide: https://github.com/lucide-icons/lucide
+- Motion: https://github.com/motiondivision/motion
+- Express: https://github.com/expressjs/express
+- dotenv: https://github.com/motdotla/dotenv
+- Google Gen AI SDK: https://github.com/googleapis/js-genai
+
+These projects are maintained by their respective authors and communities. Their names and trademarks belong to their respective owners. Refer to each project's license and the installed package versions for applicable license terms.
+
+AI-assisted development: Google AI Studio and ChatGPT were used to assist with development-related tasks and documentation. Other tools should be credited if they were used by the team.
+
+Public Data and Reference Sources
+
+The following public Bangladesh government websites provide reference information about land records and services:
+
+1. Department of Land Records and Surveys (DLRS):
+   https://dlrs.gov.bd/
+
+2. Online Land Record and Survey Management — Khatian Search:
+   https://settlement.gov.bd/Khatian/
+
+3. Bangladesh Land Information Portal:
+   https://www.land.gov.bd/
+
+These links are listed as public reference sources. Their inclusion does not mean that data was downloaded from these websites or that the application is connected to government databases.
+
+Demonstration Data
+
+Sample identifiers, including "RS-DEMO-101", "CS-DEMO-075", and plot number "8-9-2", are illustrative demonstration values. They should not be interpreted as real or officially verified land records.
+
+Any future use of actual records must comply with applicable access conditions, privacy requirements, and authorization rules.
 
 How to Run Locally
 
@@ -45,107 +93,78 @@ Prerequisites
 - npm
 - Git
 
-1. Clone the repository
+Step 1: Clone the repository
 
 git clone https://github.com/atikrh-beep/Code-Nova_Jomi-Guard-Pro.git
+
+Step 2: Enter the project directory
+
 cd Code-Nova_Jomi-Guard-Pro
 
-2. Install dependencies
+Step 3: Install dependencies
 
 npm install
 
-3. Configure environment variables
+Step 4: Configure environment variables
 
-Review ".env.example". If your local setup requires Gemini API access, configure the required "GEMINI_API_KEY" securely using the method supported by the application.
+Review the ".env.example" file. If an AI feature requires a Gemini API key, configure it securely through the appropriate environment or hosting settings.
 
-Never commit API keys or other secrets to GitHub.
+Never publish API keys, passwords, or private credentials in a public repository.
 
-The example environment file also defines "APP_URL", which may be supplied by the hosting environment.
-
-4. Start the development server
+Step 5: Start the development server
 
 npm run dev
 
-Open the local address shown in the terminal. The configured Vite development server uses port "3000" by default.
+Open the local URL printed in the terminal. The project's development script uses port "3000" by default.
 
-5. Create a production build
+Step 6: Build for production
 
 npm run build
 
-The production build is generated in the "dist" directory.
-
-To preview the build locally:
+To preview the production build locally:
 
 npm run preview
 
-Data Used
+The production build is generated in the "dist/" directory.
 
-The project uses demonstration land-case information to illustrate its workflows. Example fields include:
+Report Integrity and Responsible Screening
 
-- Mouza or locality
-- RS and CS Khotian references
-- Dag or plot number
-- Recorded land quantity and area unit
-- Land classification
-- Registration reference
-- Recorded party name
-- Officer notes and review findings
+Cryptographic hashes can help determine whether a report file matches a previously recorded file hash. A matching hash supports a conclusion that the file contents match that stored integrity reference.
 
-Example identifiers such as "RS-DEMO-101", "CS-DEMO-075", and "8-9-2" are synthetic demonstration values, not evidence of live government-record access.
+However, a hash match alone does not establish:
 
-No live government database integration is claimed unless it has been implemented and authorized.
+- Legal validity of a document
+- Accuracy of the information contained in it
+- Identity or authority of the issuer
+- Legal ownership of land
 
-AI Tools Used
+Potential discrepancies and AI-generated findings require human review and comparison with appropriate source records.
 
-- Google AI Studio: AI-assisted application development and code generation.
-- ChatGPT: Project planning, documentation, and development guidance.
-- Additional tools: List Cursor, Codex, or other tools if used during the project workflow.
+Security and Privacy
 
-The Google GenAI SDK is included as a dependency. Actual AI functionality requires the relevant code and configuration; the presence of the dependency alone does not establish that every AI feature is operational.
-
-Government and Public Benefits
-
-Jomi Guard Pro explores how digital workflows could help:
-
-- Reduce repetitive document-handling work.
-- Identify potential inconsistencies for further review.
-- Organize case findings and supporting information.
-- Improve visibility into case progress.
-- Maintain clearer activity histories.
-- Support report-integrity checking.
-- Establish a foundation for future authorized integration with digital land-record systems.
-
-These are intended benefits that require testing and evaluation before real-world deployment.
-
-Limitations and Responsible Use
-
-- AI-generated findings require human review.
-- The system does not independently establish land ownership or make legally binding decisions.
-- Hash comparison can help detect file changes but does not establish legal validity or factual accuracy.
-- Government-system integration requires authorization and appropriate security controls.
-- Data handling and access protection depend on the actual implementation.
+- Do not expose API keys or credentials.
+- Use only documents that you are authorized to access.
+- Avoid collecting or publishing unnecessary personal information.
+- Protect sensitive records with appropriate access controls.
+- Review AI-generated findings before relying on them.
+- Obtain authorization before connecting to official government systems.
 
 Future Improvements
 
-- Authorized integration with digital land-record systems.
-- Improved document extraction and discrepancy detection.
-- Stronger report-integrity records and digital signatures.
-- Workflow analytics and notifications.
-- Bangla and English language support.
-- Security testing and pilot deployment.
+- Authorized integration with official digital land-record services
+- Improved document extraction and discrepancy highlighting
+- Stronger report-integrity records and digital signatures
+- More comprehensive audit trails
+- Notifications and workflow analytics
+- Bangla and English language support
+- Accessibility, security, and usability testing
 
-Project Details
+These are potential improvements and should not be interpreted as features already completed.
 
-- Project: Jomi Guard Pro
-- Domain: Government Technology
-- Hackathon Theme: Digital Land Records, Verification & Digitization
-- Repository: https://github.com/atikrh-beep/Code-Nova_Jomi-Guard-Pro
-- Live Demo: https://code-nova-jomi-guard-pro.vercel.app/
+Repository
+
+GitHub: https://github.com/atikrh-beep/Code-Nova_Jomi-Guard-Pro
 
 Disclaimer
 
-Jomi Guard Pro is an AI Hackathon prototype. It is not an official government service and does not replace authorized land records, legal advice, or government decisions.
-
----
-
-Built for the AI Hackathon at Daffodil International University.
+Jomi Guard Pro is an educational hackathon prototype. It is not an official government service and does not independently establish land ownership, legal status, or document validity. All findings should be reviewed against appropriate records by authorized people.
